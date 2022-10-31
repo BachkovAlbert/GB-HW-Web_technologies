@@ -1,0 +1,15 @@
+ul {
+    list-style: circle;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.color {
+    color: fuchsia;
+}
+
+.size {
+    width: 300px;
+}
