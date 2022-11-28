@@ -1,10 +1,21 @@
 <?php
 $work_experience = [
-['post' => 'Cleaner', 'date' => '01.02.2003 - 02.03.2004', 'description' => 'Incredibly fast and high-quality employee, 
-will not miss the slightest stain and kill all harmful bacteria.'], 
-['post' => 'Repairer', 'date' => '06.06.2006 - 07.07.2007', 'description' => 'Jack of all trades will fulfill your every whim within my competence.'], 
-['post' => 'Gardener', 'date' => '12.09.2010 - 15.11.2010',  'description' => 'The great guru for the care of the entire flora of Russia, 
-there is not a single gap in the knowledge of the flora of Russia, but there is no end to perfection, plants mutate and new knowledge appears.'], 
+  [
+    'post' => 'Cleaner', 
+    'date' => '01.02.2003 - 02.03.2004', 
+    'description' => 'Incredibly fast and high-quality employee, will not miss the slightest stain and kill all harmful bacteria.'
+  ], 
+  [
+    'post' => 'Repairer', 
+    'date' => '06.06.2006 - 07.07.2007', 
+    'description' => 'Jack of all trades will fulfill your every whim within my competence.'
+  ], 
+  [
+    'post' => 'Gardener', 
+    'date' => '12.09.2010 - 15.11.2010',  
+    'description' => 'The great guru for the care of the entire flora of Russia, there is not a single gap in the knowledge of the flora of Russia, 
+                      but there is no end to perfection, plants mutate and new knowledge appears.'
+  ], 
 ];
 ?>
 <!DOCTYPE html>
@@ -93,19 +104,19 @@ there is not a single gap in the knowledge of the flora of Russia, but there is 
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2> 
-        <div class="w3-container">
           <?php 
           for ($i = 0; $i < count($work_experience); $i++):
+          	echo '<div class="w3-container">';
             $post = $work_experience[$i]['post'];
             $date = $work_experience[$i]['date'];
             $description = $work_experience[$i]['description'];
-          ?>
+            echo '</div>';
+          ?>         
             <h5 class="w3-opacity"><b><?php echo $post; ?> </b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $date; ?></h6>
             <p><?php echo $description; ?></p>
             <hr>
-          <?php endfor; ?>
-        </div>
+          <?php endfor; ?> 
       </div>
             		
       <div class="w3-container w3-card w3-white">
